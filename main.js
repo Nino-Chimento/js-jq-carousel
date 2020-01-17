@@ -96,17 +96,15 @@ function prevPhoto() {
   }
 }
 
-$("i").click(
-  function(){
-    var circleActive = $(".nav .active");
-    var imageActive = $(".images .active");
-
-    $(this).addClass("active");
-    circleActive.removeClass("active");
-    imageActive.removeClass("active");
-    console.log(this);
-  }
-);
-listaCircle = $(".fa-circle");
-listaImg= $(".images > img")
-console.log(listaImg.lenght);
+// $("i").click(
+//   function(){
+//     var circleActive = $(".nav .active");
+//     var imageActive = $(".images .active");
+//     var listaCircle = $(".fa-circle");
+//     var start = 0;
+//     $(this).addClass("active");
+//     circleActive.removeClass("active");
+//     imageActive.removeClass("active");
+//
+//   }
+// );
