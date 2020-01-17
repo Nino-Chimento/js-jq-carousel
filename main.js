@@ -11,6 +11,11 @@ $( document ).ready(function() {
     );
 });
 
+$(document).keydown(
+  function () {
+    console.log(event.which);
+  }
+)
 // funzione next photos
 function nextPhoto() {
   // var images
