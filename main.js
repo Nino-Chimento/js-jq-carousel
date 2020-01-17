@@ -36,5 +36,13 @@ function nextPhoto() {
 }
 // funzione prevPhoto
 function prevPhoto() {
-  console.log("n");
+  var  imageActive = $(".images .active");
+  var prevImageActive = $(".images .active").prev();
+  // var circleActive
+  var circleActive = $(".nav .active");
+  var prevCircleActive = circleActive.prev();
+  if (imageActive.hasClass("first")) {
+      imageActive.removeClass("active");
+      $("img").last().addClass("active")
+  }
 }
