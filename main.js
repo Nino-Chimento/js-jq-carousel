@@ -95,4 +95,9 @@ function prevPhoto() {
     prevCircleActive.addClass("active");
   }
 }
-$("i:nth-child(2)").addClass("active")
+
+$("i").click(
+  function(){
+    $(this).hide();
+  }
+);
