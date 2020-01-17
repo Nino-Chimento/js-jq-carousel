@@ -99,7 +99,9 @@ function prevPhoto() {
 $("i").click(
   function(){
     var circleActive = $(".nav .active");
+    var imageActive = $(".images .active");
     $(this).addClass("active");
     circleActive.removeClass("active");
+    imageActive.removeClass("active");
   }
 );
