@@ -47,4 +47,10 @@ function prevPhoto() {
       circleActive.removeClass("active");
       $(".nav i").last().addClass("active");
   }
+  else {
+    imageActive.removeClass("active");
+    prevImageActive.addClass("active");
+    circleActive.removeClass("active");
+    prevCircleActive.addClass("active");
+  }
 }
