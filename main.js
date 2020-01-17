@@ -96,15 +96,21 @@ function prevPhoto() {
   }
 }
 
-// $("i").click(
-//   function(){
-//     var circleActive = $(".nav .active");
-//     var imageActive = $(".images .active");
-//     var listaCircle = $(".fa-circle");
-//     var start = 0;
-//     $(this).addClass("active");
-//     circleActive.removeClass("active");
-//     imageActive.removeClass("active");
-//
-//   }
-// );
+
+$("i").click(
+  function(){
+    var circleActive = $(".nav .active");
+    var imageActive = $(".images .active");
+    var listaCircle = $(".fa-circle");
+    var listaImg =$("img");
+    var posizione = $(this).index();
+    console.log(posizione);
+    console.log($("img")[posizione]);
+    var appare = $("img")[posizione]
+    $(this).addClass("active");
+    circleActive.removeClass("active");
+    imageActive.removeClass("active");
+    $("img").eq(posizione).addClass("active")
+
+  }
+);
