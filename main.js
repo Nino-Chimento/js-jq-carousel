@@ -19,5 +19,8 @@ $( document ).ready(function() {
 
 
 function prevPhoto() {
-  console.log("n");
+  var imageActive = $(".active");
+  var preImageAcrive = $(".active").prev();
+  console.log(imageActive);
+  console.log(preImageAcrive);
 }
