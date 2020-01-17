@@ -1,7 +1,23 @@
 $( document ).ready(function() {
     $(".prev").click(
     function(){
-      console.log("ni");
+      prevPhoto()
     }
     );
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+function prevPhoto() {
+  console.log("n");
+}
