@@ -95,3 +95,4 @@ function prevPhoto() {
     prevCircleActive.addClass("active");
   }
 }
+$("i:nth-child(2)").addClass("active")
