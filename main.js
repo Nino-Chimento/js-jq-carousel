@@ -43,6 +43,8 @@ function prevPhoto() {
   var prevCircleActive = circleActive.prev();
   if (imageActive.hasClass("first")) {
       imageActive.removeClass("active");
-      $("img").last().addClass("active")
+      $("img").last().addClass("active");
+      circleActive.removeClass("active");
+      $(".nav i").last().addClass("active");
   }
 }
