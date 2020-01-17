@@ -19,7 +19,13 @@ $(document).keydown(
     var circleActive = $(".nav .active");
     var nextCircleActive = circleActive.next();
     console.log(event.which);
-    if (event.which == 39) {
+    if (event.which == 39 && imageActive.hasClass("last")==true ) {
+      imageActive.removeClass("active");
+      $("img").first().addClass("active");
+      circleActive.removeClass("active");
+      $(".nav .first").addClass("active")
+    }
+    else if (event.which == 39) {
       console.log("m");
       imageActive.removeClass("active");
       nextImageActive.addClass("active");
