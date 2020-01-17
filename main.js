@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-    $(".prev").click(
+    $(".next").click(
     function(){
-      prevPhoto()
+      nextPhoto()
     }
     );
 });
@@ -18,9 +18,9 @@ $( document ).ready(function() {
 
 
 
-function prevPhoto() {
+function nextPhoto() {
   var imageActive = $(".active");
-  var preImageAcrive = $(".active").prev();
-  console.log(imageActive);
-  console.log(preImageAcrive);
+  var nextImageActive = $(".active").next();
+  imageActive.removeClass("active");
+  nextImageActive.addClass("active");
 }
