@@ -4,20 +4,14 @@ $( document ).ready(function() {
       nextPhoto()
     }
     );
+    $(".prev").click(
+      function(){
+        prevPhoto()
+      }
+    );
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
+// funzione next photos
 function nextPhoto() {
   // var images
   var imageActive = $(".images .active");
@@ -31,11 +25,16 @@ function nextPhoto() {
     circleActive.removeClass("active");
     $(".nav .first").addClass("active")
   }
-  // image
-  imageActive.removeClass("active");
-  nextImageActive.addClass("active");
-  // pallini
-  circleActive.removeClass("active");
-  nextCircleActive.addClass("active");
-
+  else {
+    // image
+    imageActive.removeClass("active");
+    nextImageActive.addClass("active");
+    // pallini
+    circleActive.removeClass("active");
+    nextCircleActive.addClass("active");
+  }
+}
+// funzione prevPhoto
+function prevPhoto() {
+  console.log("n");
 }
