@@ -18,6 +18,11 @@ $(document).keydown(
     // var circle
     var circleActive = $(".nav .active");
     var nextCircleActive = circleActive.next();
+    var  imageActive = $(".images .active");
+    var prevImageActive = $(".images .active").prev();
+    // var circleActive
+    var circleActive = $(".nav .active");
+    var prevCircleActive = circleActive.prev();
     console.log(event.which);
     if (event.which == 39 && imageActive.hasClass("last")==true ) {
       imageActive.removeClass("active");
@@ -32,6 +37,18 @@ $(document).keydown(
       // pallini
       circleActive.removeClass("active");
       nextCircleActive.addClass("active");
+    }
+    else if (event.which == 37 && imageActive.hasClass("first")== true) {
+      imageActive.removeClass("active");
+      $("img").last().addClass("active");
+      circleActive.removeClass("active");
+      $(".nav i").last().addClass("active");
+    }
+    else if (event.which == 37) {
+      imageActive.removeClass("active");
+      prevImageActive.addClass("active");
+      circleActive.removeClass("active");
+      prevCircleActive.addClass("active");
     }
   }
 )
