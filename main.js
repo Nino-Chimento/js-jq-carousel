@@ -98,6 +98,8 @@ function prevPhoto() {
 
 $("i").click(
   function(){
-    $(this).hide();
+    var circleActive = $(".nav .active");
+    $(this).addClass("active");
+    circleActive.removeClass("active");
   }
 );
