@@ -13,7 +13,20 @@ $( document ).ready(function() {
 
 $(document).keydown(
   function () {
+    var imageActive = $(".images .active");
+    var nextImageActive = $(".images .active").next();
+    // var circle
+    var circleActive = $(".nav .active");
+    var nextCircleActive = circleActive.next();
     console.log(event.which);
+    if (event.which == 39) {
+      console.log("m");
+      imageActive.removeClass("active");
+      nextImageActive.addClass("active");
+      // pallini
+      circleActive.removeClass("active");
+      nextCircleActive.addClass("active");
+    }
   }
 )
 // funzione next photos
